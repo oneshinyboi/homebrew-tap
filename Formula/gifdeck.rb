@@ -8,16 +8,16 @@ class Gifdeck < Formula
   #  instead (see caveats).
   on_macos do
     url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.0/gifdeck-0.1.0-aarch64-apple-darwin.tar.gz"
-    sha256 "a9eb88d3790cec447e3720ba0097cecae97b3bad181582d1fa159cc4cafb5ca0"
+    sha256 "652986e76e533eecf5870c6f268339cd3f8cf78afc794d05d27eb576d1568fcd"
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.0/gifdeck-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c84c6740ee794854f1eb6ed6652bf469b3063722c03a587ecff762b5f8c97e45"
+      sha256 "7a5eecf460c2ceaffe3d31dfe47616f2d2b17017b23f390f5c83965e02f27aa7"
     else
       url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.0/gifdeck-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "56ac4fe0edf05adc3bea1c4c8100dc9d043864555e9f053645b8a4f2e30bdc50"
+      sha256 "8c3ea4f8d5672a4b854ddf3379cbc8d27928aceaf389aec8fabc2c2b7a828b00"
     end
   end
 
