@@ -1,23 +1,23 @@
 class Gifdeck < Formula
   desc "GIF picker for the terminal: search, favorite, clipboard"
   homepage "https://github.com/oneshinyboi/gifdeck"
-  version "0.1.1"
+  version "0.2.0"
   license "GPL-3.0-only"
 
   # macOS builds are Apple Silicon only; Intel Macs should use
   #  instead (see caveats).
   on_macos do
-    url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.1/gifdeck-0.1.1-aarch64-apple-darwin.tar.gz"
-    sha256 "2cd1c09906a5220db3a347fc4eeac4148495e99c2c1c130f50192b1ed1088019"
+    url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.2.0/gifdeck-0.2.0-aarch64-apple-darwin.tar.gz"
+    sha256 "95e59ee5a45fb194eb8c57ab2f2eab5e71492e7934ee26ced725bbb27e054cca"
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.1/gifdeck-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1af6d263904fdc20bacc18422e00a93c35e144a1b411f6cde9f9d7c2b8a7fe2d"
+      url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.2.0/gifdeck-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cf5fed6a8ef172de12483922ca8e66a3acb24212984db7b32deaba18a2326430"
     else
-      url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.1.1/gifdeck-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2063eeff0ddd8630fc285a1b8d27de66b58cd5b777f25d224afd7e6465ebd1c1"
+      url "https://github.com/oneshinyboi/gifdeck/releases/download/v0.2.0/gifdeck-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "675bb620ab622bb41ef4cdccb85a012219f30484b52dbf9a2d41e58bc9bee5e7"
     end
   end
 
